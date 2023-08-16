@@ -61,9 +61,9 @@ func main() {
 
 Output
 
-![path!](/assets/gage.png)
+![path!](assets/gage.png)
 
-![path!](/assets/gage2.png)
+![path!](assets/gage2.png)
 
 ## Menentukan Grade
 
