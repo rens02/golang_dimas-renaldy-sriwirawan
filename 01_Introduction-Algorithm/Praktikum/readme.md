@@ -9,4 +9,4 @@
 
 1. Golang, Python, Java (referensi dari roadmap.sh)
 2. teknologi wajib yang perlu dipelajari backend engineer adalah GIT sebagai version control system, Database seperti SQL, dan Basic Linux(referensi dari roadmap.sh)
-3. ![path](assets/flowchart.jpeg)
+3. ![path](assets/flowchart.png)
