@@ -15,14 +15,14 @@
     
     Output: Bilangan Prima
      <br>********************************Jawab********************************<br> 
-    dioptimalkan menggunakan complexity O(sqrt(n)) karena lebih cepat dari dari O(n) atau O(n/2) dimana untuk pengecekan bilangan prima terdapat beberapa handling, lalu dilakukan looping lagi untuk cek proses penemuan akar kuadrat dari angka yang diberikan [Sours Code](tugas/bilanganprima.go#L22)
+    dioptimalkan menggunakan complexity O(sqrt(n)) karena lebih cepat dari dari O(n) atau O(n/2) dimana untuk pengecekan bilangan prima terdapat beberapa handling, lalu dilakukan looping lagi untuk cek proses penemuan akar kuadrat dari angka yang diberikan [Source Code](tugas/bilanganprima.go#L22)
 
     untuk output nya sebagai berikut ini 
     <br>![Alt Text](Screenshot/prima.png)<br>
 
 2. Terdapat dua bilangan integer yaitu x dan n. Buatlah sebuah fungsi untuk melakukan perhitungan perpangkatan (x^n dibaca x pangkat n). Time complexity dari sebuah fungsi perpangkatan harus lebih cepat dari O(n). Contoh time complexity yang optimal adalah logaritmik.
     <br>********************************Jawab********************************<br>  
-    [Sours Code](tugas/bilanganinteger.go)
+    [Source Code](tugas/bilanganinteger.go)
     Output:
     <br>![Alt Text](Screenshot/integer.png)<br>
 
