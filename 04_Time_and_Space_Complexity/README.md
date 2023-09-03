@@ -24,7 +24,7 @@
     <br>********************************Jawab********************************<br>  
     [Sours Code](tugas/bilanganinteger.go)
     Output:
-    <br>![Alt Text](assets/integer.png)<br>
+    <br>![Alt Text](Screenshot/integer.png)<br>
 
 ## Resume
 Space complexity pada Golang mengacu pada jumlah memori yang digunakan oleh program ketika dieksekusi. Hal ini tergantung pada banyak faktor, seperti jumlah variabel, tipe data, penggunaan array atau slice, dan alokasi memori secara dinamis. Oleh karena itu, sangat penting untuk mempertimbangkan space complexity saat menulis program Golang untuk memastikan penggunaan memori yang optimal.
