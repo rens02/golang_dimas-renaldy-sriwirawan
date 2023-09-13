@@ -1,7 +1,7 @@
-1. Create database alta_online_shop.
+-- 1. Create database alta_online_shop.
 CREATE DATABASE alta_online_shop;
 
-2. Dari schema Olshop yang telah kamu kerjakan di, Implementasikanlah menjadi table pada MySQL.
+-- 2. Dari schema Olshop yang telah kamu kerjakan di, Implementasikanlah menjadi table pada MySQL.
 
 -- Create table user
 CREATE TABLE user (
@@ -88,7 +88,7 @@ CREATE TABLE transaction_detail (
     FOREIGN KEY (product_id) REFERENCES product(id)
 );
 
-
+-- 3. Create table kurir
 CREATE TABLE kurir (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255), 
@@ -96,14 +96,15 @@ CREATE TABLE kurir (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
- 
+-- 4. Tambahkan ongkos_dasar column di tabel kurir. 
 ALTER TABLE kurir ADD ongkos_dasar INT;
 
- 
+-- 5. Rename tabel kurir menjadi shipping. 
 ALTER TABLE kurir RENAME TO shipping;
-
+-- 6. Hapus / Drop tabel shipping karena ternyata tidak dibutuhkan.
 DROP TABLE shipping;
 
+-- 7a. 1-to-1: payment method description.
 CREATE TABLE payment_method_description (
     id INT PRIMARY KEY AUTO_INCREMENT,
     payment_method_id INT,
@@ -113,7 +114,7 @@ CREATE TABLE payment_method_description (
     FOREIGN KEY (payment_method_id) REFERENCES payment_method(id)
 );
 
-
+-- 7b. 1-to-many: user dengan alamat.
 CREATE TABLE address (
     id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
@@ -126,6 +127,7 @@ CREATE TABLE address (
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
 
+-- 7c. many-to-many: user dengan payment method menjadi user_payment_method_detail.
 CREATE TABLE user_payment_method_detail (
     id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
@@ -135,5 +137,3 @@ CREATE TABLE user_payment_method_detail (
     FOREIGN KEY (user_id) REFERENCES user(id),
     FOREIGN KEY (payment_method_id) REFERENCES payment_method(id)
 );
-
-
