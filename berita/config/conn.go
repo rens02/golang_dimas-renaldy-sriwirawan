@@ -1,14 +1,19 @@
 package config
 
 import (
+	"beritaalta/model/news"
 	"fmt"
-	"log"
-
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"log"
 )
 
-var DbMysql *gorm.DB
+var Db *gorm.DB
+
+func Init() {
+	initDatabase()
+	migrate()
+}
 
 // pake .env
 //func initDatabase() {
@@ -31,7 +36,7 @@ var DbMysql *gorm.DB
 //		name,
 //	)
 //	var err error
-//	DbMysql, err = gorm.Open(mysql.Open(connectionString), &gorm.Config{})
+//	Db, err = gorm.Open(mysql.Open(connectionString), &gorm.Config{})
 //	if err != nil {
 //		log.Fatalf("Failed to connect to database: %s", err.Error())
 //	}
@@ -39,19 +44,25 @@ var DbMysql *gorm.DB
 
 func initDatabase() {
 	username := "root"
-	host := "localhost"
-	port := "3306"
+	password := "mysql1234"
+	host := "35.187.224.18"
+	port := "33062"
 	name := "beritabaru"
 
-	connectionString := fmt.Sprintf("%s:@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local",
+	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s",
 		username,
+		password,
 		host,
 		port,
 		name,
 	)
 	var err error
-	DbMysql, err = gorm.Open(mysql.Open(connectionString), &gorm.Config{})
+	Db, err = gorm.Open(mysql.Open(connectionString), &gorm.Config{})
 	if err != nil {
 		log.Fatalf("Failed to connect to database: %s", err.Error())
 	}
+}
+
+func migrate() {
+	Db.AutoMigrate(&news.News{})
 }
