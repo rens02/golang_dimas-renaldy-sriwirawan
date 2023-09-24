@@ -1,4 +1,4 @@
-module beritaalta
+module Prioritas_1
 
 go 1.20
 

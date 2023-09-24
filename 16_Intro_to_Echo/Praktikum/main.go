@@ -57,12 +57,67 @@ func GetUserController(c echo.Context) error {
 
 // delete user by id
 func DeleteUserController(c echo.Context) error {
-	// your solution here
+	// Get the user ID from the URL parameter
+	idParam := c.Param("id")
+	userID, err := strconv.Atoi(idParam)
+	if err != nil {
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid user ID"})
+	}
+
+	// Find the index of the user with the specified ID
+	userIndex := -1
+	for i, user := range users {
+		if user.Id == userID {
+			userIndex = i
+			break
+		}
+	}
+
+	if userIndex == -1 {
+		return c.JSON(http.StatusNotFound, map[string]string{"error": "User not found"})
+	}
+
+	// Remove the user from the users slice
+	users = append(users[:userIndex], users[userIndex+1:]...)
+
+	return c.JSON(http.StatusOK, map[string]string{"message": "User deleted successfully"})
 }
 
 // update user by id
 func UpdateUserController(c echo.Context) error {
-	// your solution here
+	// Get the user ID from the URL parameter
+	idParam := c.Param("id")
+	userID, err := strconv.Atoi(idParam)
+	if err != nil {
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid user ID"})
+	}
+
+	// Parse the request body into a User struct for updates
+	var updatedUser User
+	if err := c.Bind(&updatedUser); err != nil {
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid request body"})
+	}
+
+	// Find the index of the user with the specified ID
+	userIndex := -1
+	for i, user := range users {
+		if user.Id == userID {
+			userIndex = i
+			break
+		}
+	}
+
+	if userIndex == -1 {
+		return c.JSON(http.StatusNotFound, map[string]string{"error": "User not found"})
+	}
+
+	// Update the user
+	users[userIndex] = updatedUser
+
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"message": "User updated successfully",
+		"user":    updatedUser,
+	})
 }
 
 // create new user

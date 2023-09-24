@@ -9,5 +9,7 @@ import (
 func main() {
 	e := echo.New()
 	config.Init()
-	e.GET("/news", controllers.GetNewsController)
+	e.GET("/berita", controllers.GetNewsController)
+	e.POST("/berita", controllers.PostNewsController)
+	e.Start(":8000")
 }

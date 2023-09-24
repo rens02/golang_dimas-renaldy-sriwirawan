@@ -1,7 +1,7 @@
 package config
 
 import (
-	"beritaalta/model/news"
+	"beritaalta/model/berita"
 	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -43,10 +43,10 @@ func Init() {
 //}
 
 func initDatabase() {
-	username := "root"
+	username := "rens02"
 	password := "mysql1234"
 	host := "35.187.224.18"
-	port := "33062"
+	port := "3306"
 	name := "beritabaru"
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s",
@@ -64,5 +64,5 @@ func initDatabase() {
 }
 
 func migrate() {
-	Db.AutoMigrate(&news.News{})
+	Db.AutoMigrate(&berita.News{}, &berita.Berita2{})
 }
