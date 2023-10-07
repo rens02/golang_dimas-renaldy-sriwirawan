@@ -3,9 +3,10 @@ package config
 import (
 	"Prioritas_1/models"
 	"fmt"
+	"log"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"log"
 )
 
 var (
@@ -19,10 +20,10 @@ func init() {
 
 func InitDB() {
 	username := "rens02"
-	password := "mysql1234"
-	host := "35.187.224.18"
+	password := "lenovo123"
+	host := "34.126.182.164"
 	port := "3306"
-	name := "beritabaru"
+	name := "alta"
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true",
 		username,
