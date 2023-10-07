@@ -14,6 +14,7 @@
 
 
 1. Membuat DB di RDS.
+   
 ![DB_RDS1](Screenshot/nomor2_1.png)
 
 ![DB_RDS2](Screenshot/nomor2_11.png)
