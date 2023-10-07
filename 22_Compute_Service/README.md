@@ -11,6 +11,8 @@
 ![DEPLOY](Screenshot/nomor1_3.png)
 
 ## Deployment using RDS
+
+
 1. Membuat DB di RDS.
 ![DB_RDS1](Screenshot/nomor2_1.png)
 
