@@ -5,17 +5,17 @@ Docker memungkinkan para developer untuk membangun, menguji, dan menjalankan apl
 
 # Tugas
 1. Install docker & docker compose
-![install](/Screenshot/install_docker.png)
+![install](Screenshot/install_docker.png)
 2. Create dockerfile.
-![dockerfile](/Screenshot/dockerfile.png)
+![dockerfile](Screenshot/dockerfile.png)
 3. Clone your code and integrate to your dockerfile.
-![clone](/Screenshot/clone.png)
+![clone](Screenshot/clone.png)
 4. Build your container
-![build](/Screenshot/build.png)
+![build](Screenshot/build.png)
 5. Push the image to docker registry
-![push](/Screenshot/push.png)
+![push](Screenshot/push.png)
 6. Deploy in your local machine
-![deploy](/Screenshot/deploy.png)
+![deploy](Screenshot/deploy.png)
 7. Try Docker Compose to run go app + mysql (optional)
 8. Try to Deploy in the Cloud (optional)
-![deploy](/Screenshot/deploy.png)
+![deploy](Screenshot/deploy.png)
