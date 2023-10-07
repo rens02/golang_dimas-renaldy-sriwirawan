@@ -14,7 +14,9 @@
 1. Membuat DB di RDS.
 ![DB_RDS1](Screenshot/nomor2_1.png)
 ![DB_RDS2](Screenshot/nomor2_11.png)
-2. Migrate Your Local Data to RDS.
+
+3. Migrate Your Local Data to RDS.
 ![MIGRATE](Screenshot/migrate.png)
-3. Connect Your Application to RDS.
+
+5. Connect Your Application to RDS.
 ![CONNECT](Screenshot/nomor2_2.png)
