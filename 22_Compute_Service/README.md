@@ -19,11 +19,11 @@
 
 ![DB_RDS2](Screenshot/nomor2_11.png)
 
-3. Migrate Your Local Data to RDS.
+2. Migrate Your Local Data to RDS.
    
 ![MIGRATE](Screenshot/migrate.png)
 
-5. Connect Your Application to RDS.
+3. Connect Your Application to RDS.
    
 ![CONNECT](Screenshot/nomor2_2.png)
 
