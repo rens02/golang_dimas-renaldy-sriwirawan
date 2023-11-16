@@ -1,0 +1,7 @@
+# Summary
+
+1. Penggunaan AI pada Go yaitu karena Go dikembangkan oleh Google untuk pengembangan aplikasi server-side dan berbasis cloud. Go memiliki compiled language sehingga lebih cepat dibanding interpreted language seperti Python. Mendukung concurrency melalui fitur goroutines sehingga dapat menjalankan banyak task secara simultan tanpa membebani memori. Memiliki standard libraries yang banyak dan didukung oleh komunitas yang kuat.
+
+2. 	Go memiliki pendukung pengembangan A.I. Beberapa Library GO untuk machine learning yaitu GoLearn, Gorgonia, Gonum dan Gomind. Library AI memungkinkan pengembang untuk mengimplementasikan berbagai tugas dan algoritma AI dengan lebih mudah, karena library ini menyediakan abstraksi, fungsi, dan komponen yang sudah jadi untuk tugas-tugas seperti pembelajaran mesin, pemrosesan bahasa alami, pengenalan gambar, dan lainnya.
+
+3. AI as a Service (AIaaS) adalah konsep di mana teknologi kecerdasan buatan (AI) dan layanan terkait tersedia sebagai layanan cloud yang dapat diakses dan digunakan oleh pengguna atau perusahaan melalui internet. Ini memungkinkan pengguna untuk memanfaatkan kemampuan AI tanpa perlu mengembangkan, memelihara, atau melatih model AI mereka sendiri. Sebagai gantinya, pengguna dapat memanfaatkan layanan AI yang telah dikembangkan dan dikelola oleh penyedia layanan cloud.
