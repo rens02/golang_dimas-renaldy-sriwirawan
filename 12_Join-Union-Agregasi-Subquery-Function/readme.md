@@ -1,0 +1,3 @@
+1. DDL (Data Definition Language) perintah yang digunakan untuk mendefinisikan, mengelola, dan mengatur struktur objek database, seperti tabel, indeks, dan tampilan. Perintah DDL yaitu CREATE, USE, DROP, RENAME, ALTER.
+2. DML (Data Manipulation Language) perintah yang digunakan untuk memanipulasi data dalam tabel dari suatu database. Perintah DML yaitu INSERT, SELECT, UPDATE, DELETE.
+3. DCL (Data Control Language) perintah yang digunakan untuk mengendalikan hak akses ke data dalam sebuah database. Perintah DCL yaitu GRANT, REVOKE.
