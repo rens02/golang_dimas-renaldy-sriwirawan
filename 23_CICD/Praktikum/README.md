@@ -1,1 +1,2 @@
 # Praktikum
+![Screenshot](ss.png)
